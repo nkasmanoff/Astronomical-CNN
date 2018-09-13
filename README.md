@@ -3,7 +3,7 @@ Contained within this repository is the type of image analysis I imagine will be
 For a project like the LSST where the amount of data is far beyond human processing, applied machine learning will prove to be a valuable tool for accelerating the consumption of data and results. 
 
 
-For starters I have downloaded an image from the web designed to appear like an example image (https://www.lsst.org/?q=node/75) taken by the LSST, and will demonstrate how ML can be used to quickly characterize characteristics such as the presence of stars, galaxies, etc. 
+For starters I have downloaded an image from the web designed to appear like an example image (https://www.lsst.org/?q=node/75) taken by the LSST, and will demonstrate how ML and data preprocessing can be used to quickly characterize the number of stars, galaxies, asteroids, etc. that may be present in such a survey image.  
 
 
 
@@ -18,21 +18,7 @@ I will be training a convolutional neural network based on google search results
 
 2. Resize images based on this
 
-3. Plug into CNN, and output the most likely identification
+3. Count up # of objects, and positions. 
 
-4. Count up # of objects, and positions. 
-
+4- Play around with different python packages and ML tools, and see if I can correctly distinguish different objects in this example image. 
 And this can then be applied to all sorts of images!
-
-
-
-Update 8/16
------------
-
-I've moved the neural network to google colab, where I have free access to a gpu to accelerate the training and testing time. The next step is figuring out how to upload data to it! 
-
-For getting a training dataset of galaxies, the best resource I've found so far is using the Kaggle Galaxy Zoo Classification Challenge. The training dataset contains >60000 images of galaxies with all kinds of morphologies, so for the purposes of this project this seems sufficent.  
-
-I also need to determine a proper threshold for the example picture, and what I want to deem a fragment of the image worth categorizing. 
-
-Another important task is the image resizing/reshaping to optimize the CNN. Still thinking this one over... 
