@@ -1,0 +1,1 @@
+these are a few of the objects in that survey image. Further processing is done in the workspace repo along with cropping, resizing, and a better overall slicing that shows more detail into each of these objects, but these are a few of those images serving as a very basic proof of concept. 
